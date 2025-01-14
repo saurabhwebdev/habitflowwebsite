@@ -1,11 +1,10 @@
 @keyframes float {
-    0% { transform: translateY(0px); }
-    50% { transform: translateY(-20px); }
-    100% { transform: translateY(0px); }
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
 }
 
 .animate-float {
-    animation: float 6s ease-in-out infinite;
+    animation: float 3s ease-in-out infinite;
 }
 
 /* Smooth scrolling */
@@ -85,4 +84,26 @@ body {
 .testimonial-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 20px 40px -15px rgba(0,0,0,0.1);
+} 
+
+/* Gradient text animation */
+@keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.animate-gradient {
+    background-size: 200% auto;
+    animation: gradient 8s ease infinite;
+}
+
+/* Pulse animation for background elements */
+@keyframes pulse {
+    0%, 100% { opacity: 0.3; }
+    50% { opacity: 0.15; }
+}
+
+.animate-pulse {
+    animation: pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 } 
