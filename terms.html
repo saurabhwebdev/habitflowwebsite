@@ -18,15 +18,37 @@
     <meta property="og:description" content="Read HabitFlow's terms of service. Clear and fair terms for using our habit tracking platform.">
     
     <!-- Same head content as index.html -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body class="bg-white text-gray-900 font-['Inter']">
-    <!-- Same navbar as index.html -->
+    <!-- Navbar -->
+    <nav class="fixed w-full bg-white/80 backdrop-blur-md z-50 border-b border-gray-100">
+        <div class="max-w-5xl mx-auto px-4">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex items-center space-x-2">
+                    <a href="/" class="flex items-center space-x-2">
+                        <svg class="w-6 h-6 text-indigo-600" viewBox="0 0 24 24" fill="currentColor" role="img">
+                            <!-- Same SVG path as in index.html -->
+                        </svg>
+                        <span class="text-sm font-medium">habit<span class="text-indigo-600">flow</span></span>
+                    </a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="/" class="text-sm text-gray-600 hover:text-black transition-colors">Home</a>
+                    <a href="http://app.habitflow.online/" class="text-sm bg-black text-white px-5 py-2 rounded-full hover:bg-gray-800 transition-all">Get Started →</a>
+                </div>
+            </div>
+        </div>
+    </nav>
     
     <main class="pt-32 pb-20 px-4">
         <div class="max-w-3xl mx-auto">
             <h1 class="text-4xl font-semibold mb-8">Terms of Service</h1>
-            <div class="prose prose-lg">
+            <div class="space-y-12">
                 <p class="text-gray-600 mb-6">Last updated: March 19, 2024</p>
                 
                 <section class="mb-12">
@@ -44,11 +66,59 @@
                     </ul>
                 </section>
 
-                <!-- Add more sections as needed -->
+                <section class="mb-12">
+                    <h2 class="text-2xl font-semibold mb-4">Service Description</h2>
+                    <p class="text-gray-600 mb-4">HabitFlow provides:</p>
+                    <ul class="list-disc pl-6 text-gray-600 space-y-2">
+                        <li>Habit tracking functionality</li>
+                        <li>Progress analytics</li>
+                        <li>Goal setting tools</li>
+                        <li>Personal data management</li>
+                    </ul>
+                </section>
+
+                <section class="mb-12">
+                    <h2 class="text-2xl font-semibold mb-4">Account Terms</h2>
+                    <p class="text-gray-600 mb-4">Users must:</p>
+                    <ul class="list-disc pl-6 text-gray-600 space-y-2">
+                        <li>Be 13 years or older</li>
+                        <li>Provide accurate information</li>
+                        <li>Maintain account security</li>
+                        <li>Not share accounts</li>
+                    </ul>
+                </section>
+
+                <section class="mb-12">
+                    <h2 class="text-2xl font-semibold mb-4">Intellectual Property</h2>
+                    <p class="text-gray-600 mb-4">HabitFlow retains all rights to:</p>
+                    <ul class="list-disc pl-6 text-gray-600 space-y-2">
+                        <li>Platform design and features</li>
+                        <li>Branding and trademarks</li>
+                        <li>Service functionality</li>
+                        <li>Generated content</li>
+                    </ul>
+                </section>
             </div>
         </div>
     </main>
 
-    <!-- Same footer as index.html -->
+    <!-- Footer -->
+    <footer class="py-12 border-t border-gray-100">
+        <div class="max-w-5xl mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="flex items-center space-x-2 mb-4 md:mb-0">
+                    <svg class="w-5 h-5 text-indigo-600" viewBox="0 0 24 24" fill="currentColor">
+                        <!-- Same SVG path as in index.html -->
+                    </svg>
+                    <span class="text-sm">habit<span class="text-indigo-600">flow</span></span>
+                </div>
+                <div class="flex items-center space-x-6 text-sm text-gray-500">
+                    <a href="/privacy.html" class="hover:text-gray-900">Privacy</a>
+                    <a href="/terms.html" class="hover:text-gray-900">Terms</a>
+                    <span>© 2024 HabitFlow</span>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html> 
