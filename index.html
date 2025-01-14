@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HabitFlow - Build Better Habits</title>
+    <link rel="icon" type="image/svg+xml" href="/vite.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-white text-gray-900 font-['Inter']">
+    <!-- Navbar -->
+    <nav class="fixed w-full bg-white/80 backdrop-blur-md z-50 border-b border-gray-100">
+        <div class="max-w-5xl mx-auto px-4">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex items-center space-x-2">
+                    <svg class="w-6 h-6 text-indigo-600" viewBox="0 0 24 24" fill="currentColor" role="img">
+                        <path d="M4.35 1.66c-.959 0-1.686.298-2.181.893-.496.595-.744 1.464-.744 2.605v3.474c0 .805-.086 1.424-.259 1.858-.173.434-.493.84-.96 1.218-.138.113-.206.206-.206.278 0 .072.068.165.205.277.476.386.798.794.967 1.225.17.43.253 1.047.253 1.851v3.462c0 1.15.25 2.023.75 2.618.5.595 1.224.892 2.174.892h.882c.379 0 .618-.018.72-.054.1-.036.15-.127.15-.271 0-.201-.133-.334-.399-.398l-.483-.109c-1.063-.241-1.595-1.29-1.595-3.148v-3.293c0-1.247-.302-2.127-.906-2.642l-.23-.193c-.112-.096-.168-.169-.168-.217 0-.056.056-.129.169-.217l.23-.193c.603-.515.905-1.395.905-2.642V5.641c0-1.11.135-1.88.405-2.31.27-.43.832-.762 1.685-.995.258-.073.387-.19.387-.35 0-.217-.29-.326-.87-.326zm14.419.029c-.58 0-.87.108-.87.325 0 .161.128.278.386.35.854.233 1.416.565 1.686.995.27.43.405 1.2.405 2.31v3.294c0 1.246.302 2.126.906 2.641l.229.193c.113.089.17.161.17.217 0 .049-.057.121-.17.217l-.23.193c-.603.515-.905 1.396-.905 2.642v3.293c0 1.858-.532 2.907-1.595 3.149l-.484.108c-.266.064-.398.197-.398.398 0 .145.05.235.15.272.102.036.341.054.72.054h.882c.95 0 1.675-.298 2.174-.893.5-.595.75-1.467.75-2.617v-3.462c0-.805.084-1.422.253-1.852.17-.43.491-.838.967-1.224.137-.113.205-.205.205-.278 0-.072-.068-.165-.205-.277-.468-.378-.788-.784-.961-1.218-.173-.435-.26-1.054-.26-1.858V5.187c0-1.142-.247-2.01-.743-2.606-.495-.595-1.222-.892-2.18-.892zM7.683 9.735c-1.456 0-2.64 1.111-2.64 2.478h1.02c0-.838.727-1.52 1.62-1.52.892 0 1.619.682 1.619 1.52h1.02c0-1.367-1.183-2.478-2.64-2.478zm8.406 0c-1.456 0-2.639 1.111-2.639 2.478h1.02c0-.838.727-1.52 1.62-1.52.892 0 1.62.682 1.62 1.52h1.02c0-1.367-1.185-2.478-2.64-2.478zM9.71 14.36v.561c0 1.277 1.062 2.316 2.366 2.316 1.305 0 2.367-1.039 2.367-2.316v-.56h-.934v.56c0 .877-.76 1.426-1.433 1.426s-1.48-.273-1.48-1.426v-.56z"/>
+                    </svg>
+                    <span class="text-sm font-medium">habit<span class="text-indigo-600">flow</span></span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#features" class="text-sm text-gray-600 hover:text-black transition-colors">Features</a>
+                    <a href="#testimonials" class="text-sm text-gray-600 hover:text-black transition-colors">Testimonials</a>
+                    <a href="https://app.habitflow.com" class="text-sm bg-black text-white px-5 py-2 rounded-full hover:bg-gray-800 transition-all">Get Started →</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 px-4">
+        <div class="max-w-4xl mx-auto text-center">
+            <div class="inline-flex items-center space-x-2 bg-gray-50 rounded-full px-4 py-2 mb-8">
+                <svg class="w-4 h-4 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                </svg>
+                <span class="text-sm text-gray-600">Free forever, no credit card required</span>
+            </div>
+            <h1 class="text-5xl md:text-6xl font-semibold leading-tight mb-6">
+                Build habits that <span class="text-indigo-600">last</span>
+            </h1>
+            <p class="text-xl text-gray-600 mb-12 max-w-2xl mx-auto">
+                Track your daily habits with our minimalist interface. Stay motivated, achieve your goals.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+                <a href="https://app.habitflow.com" 
+                   class="w-full sm:w-auto bg-black text-white px-8 py-4 rounded-full hover:bg-gray-800 transition-all">
+                    Start for free
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-24 bg-gray-50">
+        <div class="max-w-5xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-semibold mb-4">Everything you need</h2>
+                <p class="text-gray-600">Simple, powerful features to help you build better habits.</p>
+            </div>
+            <div class="relative">
+                <!-- Timeline Line -->
+                <div class="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 h-full w-px bg-indigo-200"></div>
+                
+                <!-- Timeline Items -->
+                <div class="space-y-16">
+                    <!-- Item 1 -->
+                    <div class="relative flex flex-col md:flex-row items-center gap-8 feature-item">
+                        <div class="flex-1 md:text-right">
+                            <div class="p-6 bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow">
+                                <h3 class="text-lg font-medium mb-2">Track Daily Progress</h3>
+                                <p class="text-gray-600">Monitor your habits with our intuitive tracking system.</p>
+                            </div>
+                        </div>
+                        <div class="relative z-10 w-12 h-12 bg-indigo-100 rounded-full flex items-center justify-center border-4 border-white shadow timeline-dot">
+                            <span class="text-xl">📊</span>
+                        </div>
+                        <div class="flex-1"></div>
+                    </div>
+
+                    <!-- Item 2 -->
+                    <div class="relative flex flex-col md:flex-row items-center gap-8 feature-item">
+                        <div class="flex-1"></div>
+                        <div class="relative z-10 w-12 h-12 bg-indigo-100 rounded-full flex items-center justify-center border-4 border-white shadow timeline-dot">
+                            <span class="text-xl">🎯</span>
+                        </div>
+                        <div class="flex-1">
+                            <div class="p-6 bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow">
+                                <h3 class="text-lg font-medium mb-2">Set Smart Goals</h3>
+                                <p class="text-gray-600">Create achievable goals with our smart goal-setting system.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 3 -->
+                    <div class="relative flex flex-col md:flex-row items-center gap-8 feature-item">
+                        <div class="flex-1 md:text-right">
+                            <div class="p-6 bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow">
+                                <h3 class="text-lg font-medium mb-2">Insightful Analytics</h3>
+                                <p class="text-gray-600">Get detailed insights about your habit-forming journey.</p>
+                            </div>
+                        </div>
+                        <div class="relative z-10 w-12 h-12 bg-indigo-100 rounded-full flex items-center justify-center border-4 border-white shadow timeline-dot">
+                            <span class="text-xl">📈</span>
+                        </div>
+                        <div class="flex-1"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="py-32 bg-gradient-to-b from-white to-gray-50 overflow-hidden">
+        <div class="max-w-5xl mx-auto px-4">
+            <div class="relative">
+                <!-- Background decorations -->
+                <div class="absolute inset-0 -z-10">
+                    <div class="absolute top-10 left-10 w-20 h-20 bg-indigo-50 rounded-full blur-xl opacity-60"></div>
+                    <div class="absolute bottom-10 right-10 w-20 h-20 bg-purple-50 rounded-full blur-xl opacity-60"></div>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Testimonial 1 -->
+                    <div class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition-all duration-300 testimonial-card">
+                        <div class="flex items-center space-x-1 mb-4 rating-stars">
+                            <!-- Stars will be generated by JavaScript -->
+                        </div>
+                        <p class="text-gray-600 mb-6">"HabitFlow has completely changed how I approach my daily routines. The interface is clean and intuitive."</p>
+                        <div class="flex items-center space-x-3">
+                            <img 
+                                src="https://i.pravatar.cc/300?img=1" 
+                                alt="Sarah Chen" 
+                                class="w-12 h-12 rounded-full object-cover ring-2 ring-indigo-50"
+                            >
+                            <div>
+                                <p class="font-medium">Sarah Chen</p>
+                                <p class="text-sm text-gray-500">Product Designer</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Testimonial 2 -->
+                    <div class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition-all duration-300 testimonial-card md:translate-y-8">
+                        <div class="flex items-center space-x-1 mb-4">
+                            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                            </svg>
+                            <!-- Repeat 4 more times for 5 stars -->
+                        </div>
+                        <p class="text-gray-600 mb-6">"The analytics and insights have helped me stay consistent with my habits. Love the minimalist design!"</p>
+                        <div class="flex items-center space-x-3">
+                            <img 
+                                src="https://i.pravatar.cc/300?img=2" 
+                                alt="Mike Johnson" 
+                                class="w-12 h-12 rounded-full object-cover ring-2 ring-indigo-50"
+                            >
+                            <div>
+                                <p class="font-medium">Mike Johnson</p>
+                                <p class="text-sm text-gray-500">Software Engineer</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 3 -->
+                    <div class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition-all duration-300 testimonial-card">
+                        <div class="flex items-center space-x-1 mb-4">
+                            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                            </svg>
+                            <!-- Repeat 4 more times for 5 stars -->
+                        </div>
+                        <p class="text-gray-600 mb-6">"Finally found an app that makes habit tracking enjoyable. The UI is beautiful and easy to use."</p>
+                        <div class="flex items-center space-x-3">
+                            <img 
+                                src="https://i.pravatar.cc/300?img=3" 
+                                alt="Emma Wilson" 
+                                class="w-12 h-12 rounded-full object-cover ring-2 ring-indigo-50"
+                            >
+                            <div>
+                                <p class="font-medium">Emma Wilson</p>
+                                <p class="text-sm text-gray-500">UX Researcher</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-24 bg-black text-white">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="text-3xl font-semibold mb-6">Start building better habits today</h2>
+            <p class="text-gray-400 mb-8">Join thousands of people who are already improving their lives.</p>
+            <a href="https://app.habitflow.com" 
+               class="inline-block bg-white text-black px-8 py-4 rounded-full hover:bg-gray-100 transition-all">
+                Get started for free →
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 border-t border-gray-100">
+        <div class="max-w-5xl mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="flex items-center space-x-2 mb-4 md:mb-0">
+                    <svg class="w-5 h-5 text-indigo-600" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M4.35 1.66c-.959 0-1.686.298-2.181.893-.496.595-.744 1.464-.744 2.605v3.474c0 .805-.086 1.424-.259 1.858-.173.434-.493.84-.96 1.218-.138.113-.206.206-.206.278 0 .072.068.165.205.277.476.386.798.794.967 1.225.17.43.253 1.047.253 1.851v3.462c0 1.15.25 2.023.75 2.618.5.595 1.224.892 2.174.892h.882c.379 0 .618-.018.72-.054.1-.036.15-.127.15-.271 0-.201-.133-.334-.399-.398l-.483-.109c-1.063-.241-1.595-1.29-1.595-3.148v-3.293c0-1.247-.302-2.127-.906-2.642l-.23-.193c-.112-.096-.168-.169-.168-.217 0-.056.056-.129.169-.217l.23-.193c.603-.515.905-1.395.905-2.642V5.641c0-1.11.135-1.88.405-2.31.27-.43.832-.762 1.685-.995.258-.073.387-.19.387-.35 0-.217-.29-.326-.87-.326zm14.419.029c-.58 0-.87.108-.87.325 0 .161.128.278.386.35.854.233 1.416.565 1.686.995.27.43.405 1.2.405 2.31v3.294c0 1.246.302 2.126.906 2.641l.229.193c.113.089.17.161.17.217 0 .049-.057.121-.17.217l-.23.193c-.603.515-.905 1.396-.905 2.642v3.293c0 1.858-.532 2.907-1.595 3.149l-.484.108c-.266.064-.398.197-.398.398 0 .145.05.235.15.272.102.036.341.054.72.054h.882c.95 0 1.675-.298 2.174-.893.5-.595.75-1.467.75-2.617v-3.462c0-.805.084-1.422.253-1.852.17-.43.491-.838.967-1.224.137-.113.205-.205.205-.278 0-.072-.068-.165-.205-.277-.468-.378-.788-.784-.961-1.218-.173-.435-.26-1.054-.26-1.858V5.187c0-1.142-.247-2.01-.743-2.606-.495-.595-1.222-.892-2.18-.892zM7.683 9.735c-1.456 0-2.64 1.111-2.64 2.478h1.02c0-.838.727-1.52 1.62-1.52.892 0 1.619.682 1.619 1.52h1.02c0-1.367-1.183-2.478-2.64-2.478zm8.406 0c-1.456 0-2.639 1.111-2.639 2.478h1.02c0-.838.727-1.52 1.62-1.52.892 0 1.62.682 1.62 1.52h1.02c0-1.367-1.185-2.478-2.64-2.478zM9.71 14.36v.561c0 1.277 1.062 2.316 2.366 2.316 1.305 0 2.367-1.039 2.367-2.316v-.56h-.934v.56c0 .877-.76 1.426-1.433 1.426s-1.48-.273-1.48-1.426v-.56z"/>
+                    </svg>
+                    <span class="text-sm">habit<span class="text-indigo-600">flow</span></span>
+                </div>
+                <div class="flex items-center space-x-6 text-sm text-gray-500">
+                    <a href="#" class="hover:text-gray-900">Privacy</a>
+                    <a href="#" class="hover:text-gray-900">Terms</a>
+                    <span>© 2024 HabitFlow</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Add before closing body tag -->
+    <script>
+        // Function to generate random rating between 4 and 5 stars
+        function generateStars(container) {
+            const rating = Math.random() * (5 - 4) + 4; // Random number between 4 and 5
+            const fullStars = Math.floor(rating);
+            const hasHalfStar = rating % 1 >= 0.5;
+            
+            container.innerHTML = '';
+            
+            // Add full stars
+            for (let i = 0; i < fullStars; i++) {
+                container.innerHTML += `
+                    <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                    </svg>
+                `;
+            }
+            
+            // Add half star if needed
+            if (hasHalfStar) {
+                container.innerHTML += `
+                    <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                        <defs>
+                            <linearGradient id="half-star">
+                                <stop offset="50%" stop-color="currentColor"/>
+                                <stop offset="50%" stop-color="#E5E7EB"/>
+                            </linearGradient>
+                        </defs>
+                        <path fill="url(#half-star)" d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                    </svg>
+                `;
+            }
+            
+            // Add remaining gray stars
+            const remainingStars = 5 - Math.ceil(rating);
+            for (let i = 0; i < remainingStars; i++) {
+                container.innerHTML += `
+                    <svg class="w-5 h-5 text-gray-300" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                    </svg>
+                `;
+            }
+        }
+
+        // Intersection Observer for feature items and testimonials
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate');
+                    // Generate random rating for testimonial cards when they become visible
+                    if (entry.target.classList.contains('testimonial-card')) {
+                        const ratingContainer = entry.target.querySelector('.rating-stars');
+                        generateStars(ratingContainer);
+                    }
+                }
+            });
+        }, {
+            threshold: 0.1,
+            rootMargin: '0px 0px -10% 0px'
+        });
+
+        // Observe all feature items and testimonial cards
+        document.querySelectorAll('.feature-item, .testimonial-card').forEach(item => {
+            observer.observe(item);
+        });
+    </script>
+</body>
+</html> 
