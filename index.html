@@ -147,54 +147,94 @@
     <!-- Features Section -->
     <section id="features" class="py-24 bg-gray-50">
         <div class="max-w-5xl mx-auto px-4">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl font-semibold mb-4">Everything you need</h2>
-                <p class="text-gray-600">Simple, powerful features to help you build better habits.</p>
+            <div class="text-center mb-16 relative">
+                <!-- Decorative elements -->
+                <div class="absolute inset-0 -z-10">
+                    <div class="absolute top-1/2 left-1/4 w-32 h-32 bg-indigo-50 rounded-full blur-2xl opacity-60 animate-pulse"></div>
+                    <div class="absolute top-1/2 right-1/4 w-32 h-32 bg-purple-50 rounded-full blur-2xl opacity-60 animate-pulse" style="animation-delay: 1s;"></div>
+                </div>
+                
+                <!-- Badge with adjusted margin -->
+                <div class="inline-flex items-center space-x-2 bg-white/80 backdrop-blur-sm rounded-full px-4 py-1 mb-6">
+                    <svg class="w-4 h-4 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                    </svg>
+                    <span class="text-sm text-gray-600">Powerful yet simple</span>
+                </div>
+
+                <!-- Heading with adjusted padding -->
+                <h2 class="text-4xl md:text-5xl font-semibold mb-6 pt-2 bg-gradient-to-r from-gray-900 via-indigo-600 to-gray-900 bg-clip-text text-transparent animate-gradient">
+                    Everything you need
+                </h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
+                    Simple, <span class="text-indigo-600 font-medium">powerful features</span> to help you 
+                    <span class="relative inline-block">
+                        build better habits
+                        <svg class="absolute -bottom-1 left-0 w-full h-1 text-indigo-200" viewBox="0 0 100 10" preserveAspectRatio="none">
+                            <path d="M0 5 Q 25 0, 50 5 Q 75 10, 100 5" stroke="currentColor" fill="none" stroke-width="2"/>
+                        </svg>
+                    </span>
+                </p>
             </div>
             <div class="relative">
-                <!-- Timeline Line -->
-                <div class="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 h-full w-px bg-indigo-200"></div>
+                <!-- Enhanced Timeline Line -->
+                <div class="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 h-full w-px bg-gradient-to-b from-indigo-200 via-purple-200 to-indigo-200"></div>
                 
-                <!-- Timeline Items -->
+                <!-- Enhanced Timeline Items -->
                 <div class="space-y-16">
-                    <!-- Item 1 -->
-                    <div class="relative flex flex-col md:flex-row items-center gap-8 feature-item">
+                    <!-- Enhanced Item 1 -->
+                    <div class="relative flex flex-col md:flex-row items-center gap-8 feature-item opacity-0 translate-y-8 transition-all duration-700">
                         <div class="flex-1 md:text-right">
-                            <div class="p-6 bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow">
-                                <h3 class="text-lg font-medium mb-2">Track Daily Progress</h3>
-                                <p class="text-gray-600">Monitor your habits with our intuitive tracking system.</p>
+                            <div class="p-8 bg-white rounded-2xl shadow-sm hover:shadow-md transition-all group hover:-translate-y-1">
+                                <div class="mb-4 text-indigo-600 group-hover:scale-110 transition-transform">
+                                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+                                    </svg>
+                                </div>
+                                <h3 class="text-xl font-medium mb-3">Track Daily Progress</h3>
+                                <p class="text-gray-600">Monitor your habits with our intuitive tracking system. Stay accountable and watch your progress grow day by day.</p>
                             </div>
                         </div>
-                        <div class="relative z-10 w-12 h-12 bg-indigo-100 rounded-full flex items-center justify-center border-4 border-white shadow timeline-dot">
-                            <span class="text-xl">📊</span>
+                        <div class="relative z-10 w-14 h-14 bg-gradient-to-br from-indigo-100 to-purple-100 rounded-full flex items-center justify-center border-4 border-white shadow-lg timeline-dot">
+                            <span class="text-2xl">📊</span>
                         </div>
                         <div class="flex-1"></div>
                     </div>
 
-                    <!-- Item 2 -->
-                    <div class="relative flex flex-col md:flex-row items-center gap-8 feature-item">
+                    <!-- Enhanced Item 2 -->
+                    <div class="relative flex flex-col md:flex-row items-center gap-8 feature-item opacity-0 translate-y-8 transition-all duration-700">
                         <div class="flex-1"></div>
-                        <div class="relative z-10 w-12 h-12 bg-indigo-100 rounded-full flex items-center justify-center border-4 border-white shadow timeline-dot">
-                            <span class="text-xl">🎯</span>
+                        <div class="relative z-10 w-14 h-14 bg-gradient-to-br from-indigo-100 to-purple-100 rounded-full flex items-center justify-center border-4 border-white shadow-lg timeline-dot">
+                            <span class="text-2xl">🎯</span>
                         </div>
                         <div class="flex-1">
-                            <div class="p-6 bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow">
-                                <h3 class="text-lg font-medium mb-2">Set Smart Goals</h3>
-                                <p class="text-gray-600">Create achievable goals with our smart goal-setting system.</p>
+                            <div class="p-8 bg-white rounded-2xl shadow-sm hover:shadow-md transition-all group hover:-translate-y-1">
+                                <div class="mb-4 text-indigo-600 group-hover:scale-110 transition-transform">
+                                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/>
+                                    </svg>
+                                </div>
+                                <h3 class="text-xl font-medium mb-3">Set Smart Goals</h3>
+                                <p class="text-gray-600">Create achievable goals with our smart goal-setting system. Break down big goals into manageable daily actions.</p>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Item 3 -->
-                    <div class="relative flex flex-col md:flex-row items-center gap-8 feature-item">
+                    <!-- Enhanced Item 3 -->
+                    <div class="relative flex flex-col md:flex-row items-center gap-8 feature-item opacity-0 translate-y-8 transition-all duration-700">
                         <div class="flex-1 md:text-right">
-                            <div class="p-6 bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow">
-                                <h3 class="text-lg font-medium mb-2">Insightful Analytics</h3>
-                                <p class="text-gray-600">Get detailed insights about your habit-forming journey.</p>
+                            <div class="p-8 bg-white rounded-2xl shadow-sm hover:shadow-md transition-all group hover:-translate-y-1">
+                                <div class="mb-4 text-indigo-600 group-hover:scale-110 transition-transform">
+                                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16 8v8m-4-5v5m-4-2v2m-2 4h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+                                    </svg>
+                                </div>
+                                <h3 class="text-xl font-medium mb-3">Insightful Analytics</h3>
+                                <p class="text-gray-600">Get detailed insights about your habit-forming journey. Visualize trends and identify areas for improvement.</p>
                             </div>
                         </div>
-                        <div class="relative z-10 w-12 h-12 bg-indigo-100 rounded-full flex items-center justify-center border-4 border-white shadow timeline-dot">
-                            <span class="text-xl">📈</span>
+                        <div class="relative z-10 w-14 h-14 bg-gradient-to-br from-indigo-100 to-purple-100 rounded-full flex items-center justify-center border-4 border-white shadow-lg timeline-dot">
+                            <span class="text-2xl">📈</span>
                         </div>
                         <div class="flex-1"></div>
                     </div>
@@ -284,11 +324,26 @@
     <!-- CTA Section -->
     <section class="py-24 bg-black text-white">
         <div class="max-w-4xl mx-auto px-4 text-center">
-            <h2 class="text-3xl font-semibold mb-6">Start building better habits today</h2>
-            <p class="text-gray-400 mb-8">Join thousands of people who are already improving their lives.</p>
+            <h2 class="text-4xl md:text-5xl font-semibold mb-6 bg-gradient-to-r from-white via-gray-200 to-white bg-clip-text text-transparent">
+                Start building better habits today
+            </h2>
+            <p class="text-xl text-gray-400 mb-12 max-w-2xl mx-auto leading-relaxed">
+                Join <span class="text-white font-medium">thousands of people</span> who are already 
+                <span class="relative inline-block">
+                    improving their lives
+                    <svg class="absolute -bottom-1 left-0 w-full h-1 text-indigo-500" viewBox="0 0 100 10" preserveAspectRatio="none">
+                        <path d="M0 5 Q 25 0, 50 5 Q 75 10, 100 5" stroke="currentColor" fill="none" stroke-width="2"/>
+                    </svg>
+                </span>
+            </p>
             <a href="http://app.habitflow.online/" 
-               class="inline-block bg-white text-black px-8 py-4 rounded-full hover:bg-gray-100 transition-all">
-                Get started for free →
+               class="group inline-block bg-white text-black px-8 py-4 rounded-full hover:bg-gray-100 transition-all hover:shadow-xl hover:shadow-white/10 hover:-translate-y-0.5 transform">
+                <span class="flex items-center justify-center space-x-2">
+                    <span>Get started for free</span>
+                    <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                    </svg>
+                </span>
             </a>
         </div>
     </section>
