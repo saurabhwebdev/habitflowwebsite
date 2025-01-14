@@ -128,46 +128,70 @@
     <meta http-equiv="Cache-Control" content="public, max-age=31536000">
 </head>
 <body class="bg-white text-gray-900 font-['Inter']">
-    <!-- Navbar - Enhanced with neumorphic design and micro-interactions -->
-    <nav class="fixed w-full backdrop-blur-xl z-50 bg-white/70">
-        <div class="max-w-5xl mx-auto px-4">
+    <!-- Navbar - Enhanced with modern design -->
+    <nav class="fixed w-full z-50">
+        <!-- Backdrop blur container -->
+        <div class="absolute inset-0 bg-white/70 backdrop-blur-xl border-b border-gray-200/50"></div>
+        
+        <!-- Navbar content -->
+        <div class="relative max-w-5xl mx-auto px-4">
             <div class="flex justify-between h-16 items-center">
-                <!-- Logo with playful animation -->
-                <div class="flex items-center space-x-2 group cursor-pointer">
-                    <div class="relative w-10 h-10 rounded-xl bg-white shadow-neumorphic flex items-center justify-center transform group-hover:scale-110 transition-all duration-300">
-                        <svg class="w-6 h-6 text-indigo-600 transform group-hover:rotate-12 transition-transform" viewBox="0 0 24 24" fill="currentColor">
+                <!-- Logo with enhanced animation -->
+                <a href="/" class="flex items-center space-x-2 group">
+                    <div class="relative w-10 h-10 rounded-xl bg-white shadow-neumorphic flex items-center justify-center transform group-hover:scale-105 transition-all duration-300">
+                        <svg class="w-6 h-6 text-indigo-600 transform group-hover:rotate-12 transition-transform duration-300" viewBox="0 0 24 24" fill="currentColor">
                             <path d="M4.35 1.66c-.959 0-1.686.298-2.181.893-.496.595-.744 1.464-.744 2.605v3.474c0 .805-.086 1.424-.259 1.858-.173.434-.493.84-.96 1.218-.138.113-.206.206-.206.278 0 .072.068.165.205.277.476.386.798.794.967 1.225.17.43.253 1.047.253 1.851v3.462c0 1.15.25 2.023.75 2.618.5.595 1.224.892 2.174.892h.882c.379 0 .618-.018.72-.054.1-.036.15-.127.15-.271 0-.201-.133-.334-.399-.398l-.483-.109c-1.063-.241-1.595-1.29-1.595-3.148v-3.293c0-1.247-.302-2.127-.906-2.642l-.23-.193c-.112-.096-.168-.169-.168-.217 0-.056.056-.129.169-.217l.23-.193c.603-.515.905-1.395.905-2.642V5.641c0-1.11.135-1.88.405-2.31.27-.43.832-.762 1.685-.995.258-.073.387-.19.387-.35 0-.217-.29-.326-.87-.326zm14.419.029c-.58 0-.87.108-.87.325 0 .161.128.278.386.35.854.233 1.416.565 1.686.995.27.43.405 1.2.405 2.31v3.294c0 1.246.302 2.126.906 2.641l.229.193c.113.089.17.161.17.217 0 .049-.057.121-.17.217l-.23.193c-.603.515-.905 1.396-.905 2.642v3.293c0 1.858-.532 2.907-1.595 3.149l-.484.108c-.266.064-.398.197-.398.398 0 .145.05.235.15.272.102.036.341.054.72.054h.882c.95 0 1.675-.298 2.174-.893.5-.595.75-1.467.75-2.617v-3.462c0-.805.084-1.422.253-1.852.17-.43.491-.838.967-1.224.137-.113.205-.205.205-.278 0-.072-.068-.165-.205-.277-.468-.378-.788-.784-.961-1.218-.173-.435-.26-1.054-.26-1.858V5.187c0-1.142-.247-2.01-.743-2.606-.495-.595-1.222-.892-2.18-.892zM7.683 9.735c-1.456 0-2.64 1.111-2.64 2.478h1.02c0-.838.727-1.52 1.62-1.52.892 0 1.619.682 1.619 1.52h1.02c0-1.367-1.183-2.478-2.64-2.478zm8.406 0c-1.456 0-2.639 1.111-2.639 2.478h1.02c0-.838.727-1.52 1.62-1.52.892 0 1.62.682 1.62 1.52h1.02c0-1.367-1.185-2.478-2.64-2.478zM9.71 14.36v.561c0 1.277 1.062 2.316 2.366 2.316 1.305 0 2.367-1.039 2.367-2.316v-.56h-.934v.56c0 .877-.76 1.426-1.433 1.426s-1.48-.273-1.48-1.426v-.56z"/>
                         </svg>
-                        <!-- Playful particle effect on hover -->
-                        <div class="absolute inset-0 pointer-events-none opacity-0 group-hover:opacity-100">
-                            <div class="particle-1"></div>
-                            <div class="particle-2"></div>
-                            <div class="particle-3"></div>
-                        </div>
+                        <!-- Animated glow effect -->
+                        <div class="absolute inset-0 rounded-xl bg-indigo-500/20 blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                     </div>
-                    <span class="text-sm font-medium bg-gradient-to-r from-gray-900 to-indigo-600 bg-clip-text text-transparent">
-                        habit<span class="text-indigo-600">flow</span>
-                    </span>
+                    <span class="text-gray-900 font-medium">habit<span class="text-indigo-600">flow</span></span>
+                </a>
+
+                <!-- Desktop navigation -->
+                <div class="hidden md:flex items-center space-x-1">
+                    <a href="#features" class="px-4 py-2 text-sm text-gray-600 hover:text-gray-900 rounded-lg hover:bg-gray-100/50 transition-all duration-200">
+                        Features
+                    </a>
+                    <a href="#testimonials" class="px-4 py-2 text-sm text-gray-600 hover:text-gray-900 rounded-lg hover:bg-gray-100/50 transition-all duration-200">
+                        Testimonials
+                    </a>
+                    <a href="http://app.habitflow.online/" class="ml-4 px-5 py-2 text-sm text-white bg-indigo-600 hover:bg-indigo-700 rounded-lg shadow-sm hover:shadow-indigo-500/25 transition-all duration-200 flex items-center space-x-1 group">
+                        <span>Get Started</span>
+                        <svg class="w-4 h-4 transform group-hover:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
+                        </svg>
+                    </a>
                 </div>
 
-                <!-- Enhanced navigation with micro-interactions -->
-                <div class="hidden md:flex items-center space-x-8">
-                    <a href="#features" class="nav-link relative group">
-                        <span class="relative z-10 text-sm text-gray-600 group-hover:text-black transition-colors">Features</span>
-                        <div class="absolute inset-0 bg-indigo-50 rounded-lg -z-10 transform scale-0 group-hover:scale-100 transition-transform origin-center"></div>
-                    </a>
-                    <a href="#testimonials" class="nav-link relative group">
-                        <span class="relative z-10 text-sm text-gray-600 group-hover:text-black transition-colors">Testimonials</span>
-                        <div class="absolute inset-0 bg-indigo-50 rounded-lg -z-10 transform scale-0 group-hover:scale-100 transition-transform origin-center"></div>
-                    </a>
-                    <!-- Modern CTA button with neumorphic effect -->
-                    <a href="http://app.habitflow.online/" 
-                       class="relative group px-6 py-2.5 rounded-xl bg-white shadow-neumorphic hover:shadow-neumorphic-pressed transition-all duration-300">
-                        <span class="relative z-10 text-sm bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent group-hover:from-indigo-500 group-hover:to-purple-500">
-                            Get Started →
-                        </span>
-                    </a>
+                <!-- Enhanced Mobile menu button -->
+                <div class="md:hidden">
+                    <button type="button" class="mobile-menu-button inline-flex items-center justify-center p-2 rounded-lg text-gray-600 hover:text-gray-900 hover:bg-gray-100/50 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500 transition-all duration-200">
+                        <span class="sr-only">Open main menu</span>
+                        <!-- Heroicon name: menu -->
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
                 </div>
+            </div>
+        </div>
+
+        <!-- Enhanced Mobile menu panel -->
+        <div class="mobile-menu hidden md:hidden">
+            <div class="px-4 pt-2 pb-3 space-y-1 bg-white/80 backdrop-blur-xl border-t border-gray-200/50">
+                <a href="#features" class="block px-4 py-2.5 text-base text-gray-600 hover:text-gray-900 rounded-lg hover:bg-gray-100/50 transition-all duration-200">
+                    Features
+                </a>
+                <a href="#testimonials" class="block px-4 py-2.5 text-base text-gray-600 hover:text-gray-900 rounded-lg hover:bg-gray-100/50 transition-all duration-200">
+                    Testimonials
+                </a>
+                <a href="http://app.habitflow.online/" class="block px-4 py-2.5 text-base text-indigo-600 hover:text-indigo-700 rounded-lg hover:bg-indigo-50/50 transition-all duration-200 flex items-center justify-between">
+                    <span>Get Started</span>
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
+                    </svg>
+                </a>
             </div>
         </div>
     </nav>
@@ -187,7 +211,7 @@
             <div class="inline-flex items-center space-x-2 bg-white/80 backdrop-blur-md px-4 py-2 rounded-2xl shadow-neumorphic mb-8 hover:shadow-neumorphic-pressed transition-all duration-300 cursor-pointer">
                 <div class="relative w-8 h-8 rounded-full bg-gradient-to-br from-indigo-500 to-purple-500 flex items-center justify-center">
                     <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
                     </svg>
                     <!-- Animated ring -->
                     <div class="absolute inset-0 rounded-full border-2 border-indigo-500/50 animate-ping"></div>
@@ -454,16 +478,15 @@
         </div>
     </section>
 
-    <!-- Testimonials Section - Enhanced with modern design -->
+    <!-- Testimonials Section -->
     <section id="testimonials" class="py-32 bg-gradient-to-b from-gray-50 to-white relative overflow-hidden">
-        <!-- Enhanced background elements -->
         <div class="absolute inset-0 -z-10">
             <div class="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_top_left,_var(--tw-gradient-stops))] from-indigo-50/30 via-transparent to-transparent"></div>
             <div class="absolute bottom-0 right-0 w-full h-full bg-[radial-gradient(circle_at_bottom_right,_var(--tw-gradient-stops))] from-purple-50/30 via-transparent to-transparent"></div>
         </div>
 
         <div class="max-w-6xl mx-auto px-4">
-            <!-- Enhanced section header -->
+            <!-- Section header -->
             <div class="text-center mb-16">
                 <div class="inline-flex items-center space-x-2 bg-white/80 backdrop-blur-sm rounded-full px-4 py-1 mb-6 shadow-sm">
                     <svg class="w-4 h-4 text-yellow-500" fill="currentColor" viewBox="0 0 20 20">
@@ -476,7 +499,7 @@
                 </h2>
             </div>
 
-            <!-- Enhanced testimonial cards -->
+            <!-- Testimonial cards -->
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <!-- Testimonial Card 1 -->
                 <div class="group bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
@@ -541,51 +564,101 @@
         </div>
     </section>
 
-    <!-- Enhanced CTA Section -->
-    <section class="py-24 bg-black text-white relative overflow-hidden">
-        <!-- Enhanced background elements -->
+    <!-- CTA Section -->
+    <section class="py-24 relative overflow-hidden bg-gray-900">
         <div class="absolute inset-0 -z-10">
-            <div class="absolute inset-0 bg-gradient-to-br from-indigo-900/20 to-purple-900/20"></div>
-            <div class="absolute inset-0 bg-[url('data:image/svg+xml,...')] opacity-[0.03]"></div>
+            <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-indigo-600/20 via-gray-900 to-gray-900"></div>
+            <div class="absolute inset-0 bg-grid-pattern opacity-[0.03] motion-safe:animate-grid-flow"></div>
+            <div class="absolute top-0 left-1/4 w-64 h-64 bg-gradient-to-br from-indigo-500/20 to-transparent rounded-full blur-3xl animate-pulse"></div>
+            <div class="absolute bottom-0 right-1/4 w-64 h-64 bg-gradient-to-br from-indigo-500/20 to-transparent rounded-full blur-3xl animate-pulse delay-700"></div>
         </div>
 
         <div class="max-w-4xl mx-auto px-4 text-center relative">
-            <!-- Decorative elements -->
-            <div class="absolute top-0 left-1/4 w-64 h-64 bg-indigo-500/10 rounded-full blur-3xl"></div>
-            <div class="absolute bottom-0 right-1/4 w-64 h-64 bg-purple-500/10 rounded-full blur-3xl"></div>
-
-            <h2 class="text-4xl md:text-5xl font-semibold mb-6 bg-gradient-to-r from-white via-gray-200 to-white bg-clip-text text-transparent">
-                Start building better habits today
-            </h2>
-            <p class="text-xl text-gray-400 mb-12 max-w-2xl mx-auto leading-relaxed">
-                Join <span class="text-white font-medium">thousands of people</span> who are already 
-                <span class="relative inline-block">
-                    improving their lives
-                    <svg class="absolute -bottom-1 left-0 w-full h-1 text-indigo-500" viewBox="0 0 100 10" preserveAspectRatio="none">
-                        <path d="M0 5 Q 25 0, 50 5 Q 75 10, 100 5" stroke="currentColor" fill="none" stroke-width="2"/>
+            <!-- Modern floating badge -->
+            <div class="inline-flex items-center space-x-2 bg-indigo-500/10 backdrop-blur-xl px-4 py-2 rounded-2xl mb-8">
+                <div class="relative w-8 h-8 rounded-full bg-gradient-to-br from-indigo-500 to-indigo-600 flex items-center justify-center">
+                    <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
                     </svg>
+                    <!-- Animated ring -->
+                    <div class="absolute inset-0 rounded-full border-2 border-indigo-500/50 animate-ping"></div>
+                </div>
+                <span class="text-sm text-indigo-200">Secure & Privacy-Focused</span>
+            </div>
+
+            <!-- Enhanced heading -->
+            <h2 class="text-4xl md:text-5xl font-semibold mb-6">
+                <span class="block text-white mb-2">Start building</span>
+                <span class="relative inline-block">
+                    <span class="bg-gradient-to-r from-indigo-400 to-indigo-200 bg-clip-text text-transparent animate-gradient">
+                        better habits today
+                    </span>
+                    <div class="absolute -bottom-2 left-0 w-full h-2">
+                        <svg class="w-full h-full text-indigo-500/30 animate-wave" viewBox="0 0 100 10" preserveAspectRatio="none">
+                            <path d="M0 5 Q 25 0, 50 5 Q 75 10, 100 5" stroke="currentColor" fill="none" stroke-width="2"/>
+                        </svg>
+                    </div>
                 </span>
+            </h2>
+
+            <p class="text-xl text-indigo-100/70 mb-12 max-w-2xl mx-auto leading-relaxed">
+                Join <span class="text-white font-medium">thousands of people</span> who are already transforming their lives with HabitFlow's intuitive habit tracking system.
             </p>
 
-            <!-- Enhanced CTA button -->
-            <a href="http://app.habitflow.online/" 
-               class="group inline-block bg-white text-black px-8 py-4 rounded-full hover:bg-gray-100 transition-all hover:shadow-xl hover:shadow-white/10 hover:-translate-y-0.5 transform">
-                <span class="flex items-center justify-center space-x-2">
-                    <span>Get started for free</span>
-                    <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+            <!-- Enhanced CTA buttons -->
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-6">
+                <a href="http://app.habitflow.online/" 
+                   class="group w-full sm:w-auto bg-indigo-600 text-white px-8 py-4 rounded-full hover:bg-indigo-500 transition-all shadow-lg hover:shadow-xl hover:shadow-indigo-500/25 hover:-translate-y-0.5 transform relative overflow-hidden">
+                    <span class="flex items-center justify-center relative z-10">
+                        Get started for free
+                        <svg class="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                        </svg>
+                    </span>
+                    <div class="absolute inset-0 bg-gradient-to-r from-indigo-500 to-indigo-400 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                </a>
+                
+                <!-- Social proof -->
+                <div class="flex items-center space-x-4">
+                    <div class="flex -space-x-3">
+                        <img src="https://i.pravatar.cc/32?img=1" alt="" class="w-8 h-8 rounded-full border-2 border-gray-900 ring-2 ring-indigo-500/20 transform hover:-translate-y-1 transition-transform">
+                        <img src="https://i.pravatar.cc/32?img=2" alt="" class="w-8 h-8 rounded-full border-2 border-gray-900 ring-2 ring-indigo-500/20 transform hover:-translate-y-1 transition-transform">
+                        <img src="https://i.pravatar.cc/32?img=3" alt="" class="w-8 h-8 rounded-full border-2 border-gray-900 ring-2 ring-indigo-500/20 transform hover:-translate-y-1 transition-transform">
+                    </div>
+                    <span class="text-sm text-indigo-200/70">Join <span class="text-white font-medium">2,000+</span> users</span>
+                </div>
+            </div>
+
+            <!-- Trust indicators -->
+            <div class="mt-12 flex flex-wrap justify-center gap-8 items-center">
+                <div class="flex items-center space-x-2 text-indigo-200/50">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
                     </svg>
-                </span>
-            </a>
+                    <span class="text-sm">256-bit encryption</span>
+                </div>
+                <div class="flex items-center space-x-2 text-indigo-200/50">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                    </svg>
+                    <span class="text-sm">GDPR Compliant</span>
+                </div>
+                <div class="flex items-center space-x-2 text-indigo-200/50">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                    </svg>
+                    <span class="text-sm">4.9/5 Rating</span>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="py-12 border-t border-gray-100">
+    <footer class="py-12 bg-white border-t border-gray-100">
         <div class="max-w-5xl mx-auto px-4">
             <div class="flex flex-col md:flex-row justify-between items-center">
                 <div class="flex items-center space-x-2 mb-4 md:mb-0">
-                    <svg class="w-5 h-5 text-indigo-600" viewBox="0 0 24 24" fill="currentColor">
+                    <svg class="w-5 h-5 text-indigo-600" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                         <path d="M4.35 1.66c-.959 0-1.686.298-2.181.893-.496.595-.744 1.464-.744 2.605v3.474c0 .805-.086 1.424-.259 1.858-.173.434-.493.84-.96 1.218-.138.113-.206.206-.206.278 0 .072.068.165.205.277.476.386.798.794.967 1.225.17.43.253 1.047.253 1.851v3.462c0 1.15.25 2.023.75 2.618.5.595 1.224.892 2.174.892h.882c.379 0 .618-.018.72-.054.1-.036.15-.127.15-.271 0-.201-.133-.334-.399-.398l-.483-.109c-1.063-.241-1.595-1.29-1.595-3.148v-3.293c0-1.247-.302-2.127-.906-2.642l-.23-.193c-.112-.096-.168-.169-.168-.217 0-.056.056-.129.169-.217l.23-.193c.603-.515.905-1.395.905-2.642V5.641c0-1.11.135-1.88.405-2.31.27-.43.832-.762 1.685-.995.258-.073.387-.19.387-.35 0-.217-.29-.326-.87-.326zm14.419.029c-.58 0-.87.108-.87.325 0 .161.128.278.386.35.854.233 1.416.565 1.686.995.27.43.405 1.2.405 2.31v3.294c0 1.246.302 2.126.906 2.641l.229.193c.113.089.17.161.17.217 0 .049-.057.121-.17.217l-.23.193c-.603.515-.905 1.396-.905 2.642v3.293c0 1.858-.532 2.907-1.595 3.149l-.484.108c-.266.064-.398.197-.398.398 0 .145.05.235.15.272.102.036.341.054.72.054h.882c.95 0 1.675-.298 2.174-.893.5-.595.75-1.467.75-2.617v-3.462c0-.805.084-1.422.253-1.852.17-.43.491-.838.967-1.224.137-.113.205-.205.205-.278 0-.072-.068-.165-.205-.277-.468-.378-.788-.784-.961-1.218-.173-.435-.26-1.054-.26-1.858V5.187c0-1.142-.247-2.01-.743-2.606-.495-.595-1.222-.892-2.18-.892zM7.683 9.735c-1.456 0-2.64 1.111-2.64 2.478h1.02c0-.838.727-1.52 1.62-1.52.892 0 1.619.682 1.619 1.52h1.02c0-1.367-1.183-2.478-2.64-2.478zm8.406 0c-1.456 0-2.639 1.111-2.639 2.478h1.02c0-.838.727-1.52 1.62-1.52.892 0 1.62.682 1.62 1.52h1.02c0-1.367-1.185-2.478-2.64-2.478zM9.71 14.36v.561c0 1.277 1.062 2.316 2.366 2.316 1.305 0 2.367-1.039 2.367-2.316v-.56h-.934v.56c0 .877-.76 1.426-1.433 1.426s-1.48-.273-1.48-1.426v-.56z"/>
                     </svg>
                     <span class="text-sm">habit<span class="text-indigo-600">flow</span></span>
@@ -664,6 +737,21 @@
         // Observe all feature items and testimonial cards
         document.querySelectorAll('.feature-item, .testimonial-card').forEach(item => {
             observer.observe(item);
+        });
+
+        // Mobile menu toggle
+        const mobileMenuButton = document.querySelector('.mobile-menu-button');
+        const mobileMenu = document.querySelector('.mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!mobileMenu.contains(e.target) && !mobileMenuButton.contains(e.target)) {
+                mobileMenu.classList.add('hidden');
+            }
         });
     </script>
 </body>
